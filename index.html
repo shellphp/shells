@@ -1,0 +1,228 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>免杀php大马生成</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            color: #0f0;
+            font-family: 'Courier New', Courier, monospace;
+            min-height: 100vh;
+            overflow-y: auto; /* 确保内容超出页面时可以滚动 */
+            padding: 20px;
+            position: relative;
+        }
+
+        /* 背景闪烁的字符效果 */
+        .hacker-background {
+            position: fixed; /* 修复为固定背景 */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.1;
+            font-size: 20px;
+            line-height: 1.5;
+            white-space: pre;
+            color: #00ff00;
+            animation: flicker 1s infinite alternate;
+            pointer-events: none;
+        }
+
+        /* 黑客背景字符动画 */
+        @keyframes flicker {
+            0% { opacity: 0.1; }
+            50% { opacity: 0.4; }
+            100% { opacity: 0.1; }
+        }
+
+        /* 页面标题样式 */
+        h1 {
+            font-size: 48px;
+            color: #00ff00;
+            text-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p {
+            color: #D63E1E;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        /* 输入框与按钮容器样式 */
+        .input-container {
+            text-align: center;
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto; /* 居中并设置上下外边距 */
+        }
+
+        /* 输入框样式 */
+        input[type="text"], input[type="password"] {
+            width: 80%;
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            background-color: #333;
+            color: #0f0;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+            outline: none;
+        }
+
+        /* 生成按钮样式 */
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #00ff00;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: #000;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.8);
+        }
+
+        button:hover {
+            background-color: #0f0;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 1);
+        }
+
+        /* 图片容器设置为 flex 布局 */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px; /* 图片之间的间距 */
+        }
+
+        .image-container img {
+            width: calc(50% - 20px); /* 图片宽度设置为 50%，减去间距 */
+            max-width: 600px;
+            height: auto;
+            border: 5px solid #0f0;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* 鼠标悬停时图片放大效果 */
+        .image-container img:hover {
+            transform: scale(1.1); /* 放大 1.1 倍 */
+            box-shadow: 0 0 30px rgba(0, 255, 0, 1); /* 加强阴影效果 */
+        }
+        .button, button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px 5px;
+        background-color: #99ff33;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .button:hover, button:hover {
+        background-color: #85e02d;
+    }
+    </style>
+<body>
+    <!-- 黑客风格背景 -->
+    <div class="hacker-background">
+        01010101010101001010101011010101001010101010101010010101010101010101001010101010101010
+        10101010101010101010101010100101010101001010100101010101010101001010101010101010101010
+        10101010101010101001010100101010100101010101010101010101010101001010101010101010101010
+        01010101010101010101001010100101010101010101010101001010101010101010101001010101010101
+    </div>
+
+    <!-- 页面标题 -->
+    <h1>2024最新免杀大马在线生成</h1>
+    <p>兼容php5.2到8.4，支持云函数代理，去除无用功能，修复编辑文件的功能。<br>完美解决了很多webshell编辑文件内容空白的问题。已经实现了自动跨站并且能够回显状态，即使跨站失败也不会出现文件管理显示不到当前目录文件的情况<br>更新时间:2024-10-25,新增拖拽上传，删除手动上传按钮，编辑文件修改为act编辑器，支持语法高亮与提示和主题切换，保存文件不在返回上一层目录，而是直接返回成功与否，编辑文件传输内容使用随机字符串+base64+随机字符串传输，有效防止内容检测，修改下部导航栏，后续将添加函数禁用绕过以及linux cve-2021-3156一键提权功能，敬请期待</p>
+    <br>
+    <br>
+    <div class="input-container">
+    <!-- 表单提交给 mt.php 处理 -->
+    <form action="mt.php" method="post" onsubmit="return validateForm()">
+        输入卡密:<input type="text" id="password_322" name="password_322" placeholder="请输入购买的卡密" value=""><br>
+        输入密码:<input type="text" id="password" name="title" placeholder="请输入shell标题" value=""><br>
+        输入密码:<input type="text" id="password" name="password" placeholder="请输入shell密码" value="">
+        
+        <button type="submit">生成脚本</button>
+        <button type="button" id="query-button" onclick="queryCardKey()">查询卡密</button>
+        <a href="https://faka.tools88.top/buy/1" target="_blank" class="button">购买卡密</a>
+    </form>
+    
+</div>
+
+<script>
+    // 查询卡密信息的函数
+    function queryCardKey() {
+        const cardKey = document.getElementById('password_322').value; // 获取用户输入的卡密
+        if (cardKey === "") {
+            alert("请先输入卡密！");
+            return;
+        }
+
+        // 通过fetch API发起请求，查询卡密情况
+        fetch(`ck.php?key=${encodeURIComponent(cardKey)}`)
+            .then(response => response.json()) 
+            .then(data => {
+                if (data.error) {
+                    alert(`错误: ${data.error}`);
+                } else {
+                    alert(`卡密: ${data.card_key}\n使用次数: ${data.usage_count}/${data.usage_limit}`);
+                }
+            })
+            .catch(error => {
+                alert("查询卡密失败，请重试！");
+                console.error("Error:", error);
+            });
+    }
+
+    // 表单验证函数，只验证是否输入了密码
+    function validateForm() {
+        const password_322 = document.getElementById('password_322').value;
+        const password = document.getElementById('password').value;
+
+        // 检查密码框是否为空
+        if (password === ""||password_322 === "") {
+            alert("请填写密码字段");
+            return false; // 阻止表单提交
+        }
+        return true; // 允许表单提交
+    }
+</script>
+    
+    <!-- 图片容器 -->
+    <div class="image-container">
+        <img src="1.png">
+        <img src="2.png">
+        <img src="3.png">
+        <img src="4.png">
+        <img src="5.png">
+        <img src="6.png">
+    </div>
+
+    <!-- 输入框与按钮 -->
+    
+
+</body>
+</html>
